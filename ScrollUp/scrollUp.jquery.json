@@ -1,0 +1,21 @@
+{
+    "name": "scrollUp",
+    "title": "jQuery - scrollUp()",
+    "description": "A customizable plugin for scrolling back to the top of the page.",
+    "version": "1.0.0",
+    "author": {
+        "name": "Joseph McDonald",
+        "email": "joemcdonald@ymail.com"
+    },	
+	"licenses": [{
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        },
+        {
+            "type":"GPL",
+            "url":"http://www.gnu.org/licenses/gpl.html"    
+        }],
+	"dependencies": {
+        "jquery": "=1.11.3"
+    }
+}
