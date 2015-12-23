@@ -41,14 +41,14 @@ A simple customizable plugin for scrolling back to top of page.
 
 | Option      | Value            | Desciption                         |
 | :-----------|:-----------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| appearAt    | Integer (px)     | Where scroll image should appear based on scrollbar's vertical position. (higher the number, the longer it takes for scroll image to appear) `default: 150` |
+| shownAt    | Integer (px)     | Where scroll image should show based on scrollbar's vertical position. (higher the number, the longer it takes for scroll image to appear) `default: 150` |
 | fadeSpeed   | Integer (ms)     | Control 'Fade' effect speed for scroll image. `default: 200` |
 | scrollSpeed | Integer (ms)     | Control speed when animation scrolls up. `default: 200` |
 | arrowImage  | String (image)   | Selects the Arrow Image. Image names: white, black, red, grey, green, round-blue, round-green, round-orange, round-grey, round-corner-grey, round-corner-black, round-broken-line. `default: round-broken-line` |
 
 ````javascript
 $("#scrollUpId").scrollUp({
-	appearAt: 150,
+	shownAt: 150,
 	fadeSpeed: 200,
 	scrollSpeed: 200,
 	arrowImage: 'round-broken-line'

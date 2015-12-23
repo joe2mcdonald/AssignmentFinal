@@ -9,7 +9,7 @@
 	$.fn.scrollUp = function (options) {
 		// Defaults
 		var defaults = {
-			appearAt: 150, // px
+			shownAt: 150, // px
 			fadeSpeed: 200, // ms
 			scrollSpeed: 200, // ms
 			arrowImage: 'round-broken-line'
@@ -59,7 +59,7 @@
 			$(document).scroll(function () {
 				// Determines when to show/hide scrollBtn using scrollTop() method
 				// scrollTop() method gets current vertical position of scroll bar
-				if ($(this).scrollTop() > parseInt(settings.appearAt)) {
+				if ($(this).scrollTop() > parseInt(settings.shownAt)) {
 					scrollBtn.fadeIn(settings.fadeSpeed);
 				} else {
 					scrollBtn.fadeOut(settings.fadeSpeed);
