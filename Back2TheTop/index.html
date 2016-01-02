@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+	<title>back2TheTop Demo</title>
+	<!-- 		jQuery version 1.11.3 	-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- 		back2TheTop version 1.0 		-->
+	<script src="js/jquery.back2TheTop.js"></script>
+	<!-- 		back2TheTop CSS 				-->
+	<link href="css/back2TheTop.css" rel="stylesheet" type="text/css" />
+	<style>
+		#back2TheTopId {
+			display: none;
+			position: fixed;
+			cursor: pointer;
+			/* modify below css to your needs */
+			width: 35px;
+			height: 35px;
+			bottom: 40px;
+			right: 20px;
+		}
+	</style>
+	<!-- 	OPTIONS	back2TheTop JS   		 -->
+	<script>
+		$(document).ready(function () {
+			// default configuration OF THE JS FUNCTION
+			$("#back2TheTopId").back2TheTop({
+				shownAt: 150,
+				fadeSpeed: 2000,
+				scrollSpeed: 1000,
+				arrowImage: 'round-grey'
+			});
+		});
+	</script>
+</head>
+<body>
+	<!--  ================  BACK UP ARROW ICON  ================    -->
+	<div id="back2TheTopId">BACK UP</div>
+</body>
+</html>
