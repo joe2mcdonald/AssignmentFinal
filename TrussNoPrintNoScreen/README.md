@@ -1,4 +1,4 @@
-TRUSS MESSAGE BOXES 
+TRUSS NO-PRINT NO-SCREEN 
 author: 
         "name": "Joseph McDonald - McDonald Media Production"
         "email": "joemcdonald@ymail.com"
@@ -30,6 +30,6 @@ Put the link to the print style sheet, with the media attribute set to "print" &
 Include the stylesheet "truss-noprint-noscreen.css" file in the css folder. 
 
 **4. You should not feel constrained by the way I have built the initial code. 
-If you disagree with how something has been done, feel free to revise it for the needs of your particular site.
+If you disagree with how something that has been done, feel free to revise it for the needs of your particular site.
 ````
 ````

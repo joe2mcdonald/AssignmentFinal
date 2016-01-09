@@ -1,0 +1,15 @@
+
+/* This stylesheet contains the clearfix helper class.  */
+/* Based on Nicolas Gallagher - "micro" clearfix.       */
+.container:before,
+.container:after {
+    content: " "; 
+    display: table; 
+}
+.container:after {
+    clear: both;
+}
+.container {
+    *zoom: 1;  /* include this for IE 6/7 only (trigger hasLayout) */
+}
+}
