@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<meta charset="UTF-8">
+<title>Truss No-Print No-Screen</title>
+<meta name="description" content="Truss No-Print No-Screen">
+<meta name="author" content="Joseph McDonald - McDonald Media Production">
+
+<!-- 	            TRUSS NO-PRINT NO-SCREEN                    -->	
+<!-- 	                      DEMO   	                        -->	
+<!-- 	=====================================================	-->
+<!-- 
+Create A Stylesheet For Print, this will allow you to create custom CSS classes applied only at the time of print.
+Truss No-Print No-Screen prevents the element that the class is attached to from being sent to the printer. 
+
+In the HTML <head> 
+Put in the structure stylesheet file that controls the layout of the page and formatting of the content, with the media attribute set to "all".
+Put the link to the print style sheet, with the media attribute set to "print" & "screen" , at the end of the list of stylesheets. 
+-->	 
+
+<!-- Main stylesheet on top of the list of stylesheets - media="all" -->   
+<!--
+<link href="css/main-stylesheet-on-top.css" rel="stylesheet" type="text/css" media="all" >
+--> 
+
+<!-- Print only stylesheet, on bottom of the list of style sheets --> 
+<link href="demo/css/truss-noprint-noscreen-demo.css"  rel="stylesheet" type="text/css" media="screen, print">
+
+</head>
+    
+<body>
+<!-- 	=====================================================	-->	
+<!-- 	          TRUSS NO-PRINT NO-SCREEN                      -->	
+<!-- 	                 DEMO   	                    -->	
+<!-- 	=====================================================	-->
+
+<!-- 	=====================================================	-->	
+    <h1>Truss No-Print No-Screen </h1>    
+    <h2>           DEMO          </h2>
+<!-- 	=====================================================	-->	
+
+<p class="bold">
+1 This is a bold paragraph. It displays on the screen and 
+also prints.
+</p>
+
+<p class="bold no-print">
+2 This is also a bold paragraph. It does not print, only 
+displays on the screen.
+</p>
+
+<div class="notice small no-screen">
+3 This small red text with yellow background notice prints 
+but does not display on the screen. (Some printers don't 
+print background colors.)
+</div>
+
+<div class="no-print">
+<img src="demo/images/Joe McDonald-36.jpg" width="200" height="150" border="0" > 4 This image and this text displays on screen but does not print.
+<br>
+<p>
+5 Everything in this div displays on the screen but does not 
+print (unless class overrides the div).
+</p>
+</div>
+
+<p>
+6 This sentence displays on the screen and also prints. 
+<br>
+<span class="notice small no-print">7 This sentence of the same paragraph, however, does not print because it has class no-print.</span> 
+<br>
+<span class="no-screen">8 This sentence does not display on the screen, but does print because it has class no-screen.</span> 
+<br>
+9 This last sentence of the paragraph both displays on the screen and prints.
+</p>
+
+
+			
+<!-- 	=====================================================	-->	
+<br>
+<br>
+<br>
+
+
+</body>
+</html>

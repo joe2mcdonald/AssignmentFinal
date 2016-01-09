@@ -1,0 +1,29 @@
+/* ----------------------------------------------------------------
+                 Truss No-Print No-Screen
+
+author: Joseph McDonald - McDonald Media Production
+------------------------------------------------------------------ */
+/* -- ========================================================= -- */
+/* -- ===                                                   === -- */
+/* -- ========================================================= -- */
+
+@media print
+{
+ .no-print
+    {
+        display: none !important;
+        height: 0;
+    }
+
+ .no-print, .no-print *{
+        display: none !important;
+        height: 0;
+    }
+}
+
+@media screen 
+{ .no-screen 
+	{ 
+	display: none;
+	 } 
+}
