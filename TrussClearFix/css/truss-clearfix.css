@@ -1,15 +1,14 @@
-
-/* This stylesheet contains the clearfix helper class.  */
-/* Based on Nicolas Gallagher - "micro" clearfix.       */
-.container:before,
-.container:after {
+/* This stylesheet contains the truss clearfix helper class.  */
+/* Based on Nicolas Gallagher - "micro" clearfix.             */
+.tclearfix:before,
+.tclearfix:after {
     content: " "; 
     display: table; 
 }
-.container:after {
+.tclearfix:after {
     clear: both;
 }
-.container {
+.tclearfix {
     *zoom: 1;  /* include this for IE 6/7 only (trigger hasLayout) */
 }
 }

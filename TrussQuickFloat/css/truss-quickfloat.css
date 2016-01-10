@@ -1,0 +1,9 @@
+/* This css stylesheet contains the truss quick float helper classes.  */
+
+.tfloat-right {
+  float: right !important;
+}
+
+.tfloat-left {
+  float: left !important;
+}
