@@ -1,45 +1,74 @@
 /* ----------------------------------------------------------------
-                 Truss Grid Template
+                        Truss Grid Template
 
 author: Joseph McDonald - McDonald Media Production
 ------------------------------------------------------------------ */
 /* -- ========================================================= -- */
-/* -- === Large Desktop Layout - 1200 px  16 columns        === -- */
+/* -- =======                                            ====== -- */
 /* -- ========================================================= -- */
-/*      large desktop layout (1200px and more )                    */    
- @media  only screen and (min-width: 1200px)
-   {
-      width: 0%; 
-  min-width: 0;   
-   max-width: 0; /*	 */
+h1 { 	   	
+	max-width: 400px;
+	margin: auto;
+	}
 
+/* -- ========================================================= -- */
+/* -- = CLEAR Small Portrait Layout 249 or less px all columns= -- */
+/* -- ========================================================= -- */
+@media only screen and (max-width: 249px)
+   {  
+	.trussGridContainer-16 , .trussGridContainer-12 , .trussGridContainer-6, 
+    .trussGridContainer-4 , .text16, .text12, .text6, .text4, h1 
+	{
+    	display: none;
+		height: 0;
+  	 }
+   }
+
+/* -- ========================================================= -- */
+/* -- = CLEAR Large Desktop Layout 1921 px or more all columns =-- */
+/* -- ========================================================= -- */
+ @media only screen and (min-width: 1921px)
+   {  
+.trussGridContainer-16, .trussGridContainer-12, .trussGridContainer-6, 
+.trussGridContainer-4, .text16, .text12, .text6, .text4, h1
+	   {
+    	 display: none;
+  	   }
+   }
+
+/* -- ========================================================= -- */
+/* -- ===      Large Desktop Layout - 1200 to 1920 px       === -- */
+/* -- ========================================================= -- */   
+/* -- ========================================================= -- */
+/* -- === Large Desktop Layout - 1200 to 1920 px 16 columns === -- */
+/* -- ========================================================= -- */   
+@media only screen and (min-width: 1200px) and (max-width: 1920px)
+   {
 /*-- our cleafix hack -- */ 
-  .row:before, 
+    .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
     }	 
 
-.grid-container-16{
-        width: 100%; 
-/*   min-width: 1200px;   */                   	 
+.trussGridContainer-16{
+        width: 95%;
+		margin: auto;                  	 
     }
 
 /*-- setting border box on all elements inside the grid --*/     
-.grid-container-16 *{
+.trussGridContainer-16 *{
         box-sizing: border-box; 
     }
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */     
+	   
+/* -- ========================================================= -- */ 
     [class*='col-16'] {
         float: left; 
         min-height: 1px; 
         width: 6.25%; 
         /*-- gutter -- */  					 			
         padding: 12px;    								
-		background-color: #f8ee79; 
     }
 
     .col-16-1{ width: 6.25%; }
@@ -60,13 +89,9 @@ author: Joseph McDonald - McDonald Media Production
 	.col-16-16{ width: 100%; } 
 
 /* -- ========================================================= -- */ 
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
     /* -- some extra column content styling -- */
     [class*='col-16'] > p {
-	 background-color: #ffeb00; 
+	 background-color: #803815; 
      padding: 0;
      margin: 0;
      text-align: center; 
@@ -74,48 +99,45 @@ author: Joseph McDonald - McDonald Media Production
     }
 	   
 .text16::before {
-  content: "Large Desktop Layout 1200 px";
+  content: "Large Desktop Layout 1200 - 1920 px";
 	display: inline;
-}	   	   
+	}	
+	   
+.text16 {	
+	max-width: 500px;
+	margin: auto;
+	}	     
  }
 
 /* -- ========================================================= -- */
-/* -- === Large Desktop Layout - 1200 px  12 columns        === -- */
-/* -- ========================================================= -- */
-/*      large desktop layout (1200px and more )                    */    
- @media  only screen and (min-width: 1200px)   
-   { 
-     width: 0%; 
-/*	 min-width: 0;   
-     max-width: 0; */
-
+/* -- === Large Desktop Layout - 1200 to 1920 px 12 columns === -- */
+/* -- ========================================================= -- */ 
+@media only screen and (min-width: 1200px) and (max-width: 1920px)
+   { 	   
 /*-- our cleafix hack -- */               
-  .row:before, 
+    .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
     }	     
 
-.grid-container-12{
-     width: 100%;
-    /*       min-width: 1200px; 		*/  
+.trussGridContainer-12{
+    width: 95%; 
+	margin: auto;
     }      
 
 /*-- setting border box on all elements inside the grid --*/    
-.grid-container-12 *{
-        box-sizing: border-box; 
+.trussGridContainer-12 *{
+    box-sizing: border-box; 
     }                                     
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */  
+/* -- ========================================================= -- */ 
     [class*='col-12'] {
         float: left; 
         min-height: 1px; 
         width: 8.33333333333%; 
         /*-- gutter -- */              
         padding: 12px; 
-		background-color: #f8ee79; 
     }
 
     .col-12-1{ width: 8.33333333333%; }
@@ -132,61 +154,56 @@ author: Joseph McDonald - McDonald Media Production
     .col-12-12{ width: 99.99999999996%; }
 
 /*  -- ========================================================= --  */    
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling -- */   
+    /* -- some extra column content styling -- */
     [class*='col-12'] > p {
-	 background-color: #ffeb00; 
+	 background-color: #803815; 
      padding: 0;
      margin: 0;
      text-align: center; 
      color: white; 
     }
-	   
+		   
 .text12::before {
-  content: "Large Desktop Layout 1200 px";
+  content: "Large Desktop Layout 1200 - 1920 px";
 	display: inline;
-	}	   	   	   
+	}
+	   
+.text12 {	
+	max-width: 500px;
+	margin: auto;
+	}
 }
 
 /* -- =========================================================== -- */
-/* -- === Large Desktop Layout - 1200 px  6 columns           === -- */
-/* -- =========================================================== -- */
-/*      large desktop layout (1200px and more )                      */    
- @media  only screen and (min-width: 1200px)
+/* -- === Large Desktop Layout - 1200 to 1920 px 6 columns    === -- */
+/* -- =========================================================== -- */  
+ @media only screen and (min-width: 1200px) and (max-width: 1920px)
    {
-.grid-container-6{
-      width: 100%; 
-     /*     min-width: 1200px;   */
- /*	max-width:  px; */
-    }
-
-/*-- setting border box on all elements inside the grid --*/
-.grid-container-6 *{
-        box-sizing: border-box; 
-    }
 /*-- our cleafix hack -- */ 
     .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
-    }	
+    }		   
+	   
+.trussGridContainer-6{
+        width: 95%; 
+		margin: auto;
+    }
+
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-6 *{
+        box-sizing: border-box; 
+    }
 
 /*-- ========================================================= --*/
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */
-/*  class group setting                                        */
     [class*='col-6'] {
         float: left; 
         min-height: 1px; 
         width: 16.66%; 
         /*-- gutter -- */
         padding: 12px; 
-        background-color: #f8ee79; 
     }
 
     .col-6-1{ width: 16.66%; }
@@ -197,13 +214,9 @@ author: Joseph McDonald - McDonald Media Production
     .col-6-6{ width: 100%;   }
 
 /*-- ========================================================= --*/
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling --*/
+    /* -- some extra column content styling -- */
     [class*='col-6'] > p {
-	background-color: #ffeb00; 
+	 background-color: #803815; 
      padding: 0;
      margin: 0;
      text-align: center; 
@@ -211,47 +224,46 @@ author: Joseph McDonald - McDonald Media Production
     }
 	   
 .text6::before {
-  content: "Large Desktop Layout 1200 px";
+  content: "Large Desktop Layout 1200 - 1920 px";
 	display: inline;
-	}	      
+	}
+	   
+.text6 {	
+	max-width: 500px;
+	margin: auto;
+	}	   	   
  }
 
 /* -- =========================================================== -- */
-/* -- === Large Desktop Layout - 1200 px  4 columns           === -- */
-/* -- =========================================================== -- */
-/*      large desktop layout (1200px and more )                      */    
- @media  only screen and (min-width: 1200px)
-   {
-.grid-container-4{
-      width: 100%; 
-     /*     min-width: 1200px;   */
-     /*	max-width:  px; */
-    }
-
-/*-- setting border box on all elements inside the grid --*/
-.grid-container-4 *{
-        box-sizing: border-box; 
-    }
+/* -- === Large Desktop Layout - 1200 to 1920 px 4 columns   === -- */
+/* -- =========================================================== -- */ 
+@media only screen and (min-width: 1200px) and (max-width: 1920px)	 	 	 
+   {	   
 /*-- our cleafix hack -- */ 
     .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
-    }	
+    }		   
+	   
+.trussGridContainer-4{
+        width: 95%;
+		margin: auto;
+    }
+
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-4 *{
+        box-sizing: border-box; 
+    }
 
 /*-- ========================================================= --*/
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */
-/*  class group setting                                        */
     [class*='col-4'] {
         float: left; 
         min-height: 1px; 
         width: 25%; 
         /*-- gutter -- */
         padding: 12px; 
-        background-color: #f8ee79; 
     }
 
     .col-4-1{ width: 25%; }
@@ -260,13 +272,9 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-4{ width: 100%; }
 
 /*-- ========================================================= --*/
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling --*/
+    /* -- some extra column content styling -- */
     [class*='col-4'] > p {
-     background-color: #ffeb00; 
+	 background-color: #803815; 
      padding: 0;
      margin: 0;
      text-align: center; 
@@ -274,21 +282,24 @@ author: Joseph McDonald - McDonald Media Production
     }
 	   
 .text4::before {
-  content: "Large Desktop Layout 1200 px";
+     content: "Large Desktop Layout 1200 - 1920 px";
 	display: inline;
 	}	      
+ 	   
+.text4 {	
+	max-width: 500px;
+	margin: auto;
+	}
  }
 
 /* -- ========================================================= -- */
-/* -- === Tablet landscape and desktop - 960 px  16 columns === -- */
+/* -- =      Tablet landscape & desktop - 960 to 1199 px      = -- */
 /* -- ========================================================= -- */
-/* tablet landscape and desktop layout  (960px to 1199px ) */
- @media  only screen and (min-width: 960px) and (max-width: 1199px)
+/* -- ========================================================= -- */
+/* -- == Tablet landscape & desktop - 960 to 1199 px 16 columns -- */
+/* -- ========================================================= -- */
+@media only screen and (min-width: 960px) and (max-width: 1199px)
    {
-      width: 0%; 
-      min-width: 0;   
-      max-width: 0; 
-
 /*-- our cleafix hack -- */ 
   .row:before, 
     .row:after {
@@ -297,27 +308,23 @@ author: Joseph McDonald - McDonald Media Production
         clear:both;
     }	 
  
-.grid-container-16{
-        width: 100%; 
-/*   min-width: 960px;   
-   max-width: 1199px; 	 */ 
+.trussGridContainer-16{
+        width: 95%; 
+		margin: auto;
     }
 
 /*-- setting border box on all elements inside the grid --*/     
-.grid-container-16 *{
+.trussGridContainer-16 *{
         box-sizing: border-box; 
     }
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */   
+	   
+/* -- ========================================================= -- */   
     [class*='col-16'] {
         float: left; 
         min-height: 1px; 
         width: 6.25%;             
         /*-- gutter -- */  				 			
         padding: 12px;    								
- /*       background-color: #FFDCDC; */
-		background-color: #8cff78
     }
 
     .col-16-1{ width: 6.25%; }
@@ -338,13 +345,9 @@ author: Joseph McDonald - McDonald Media Production
 	.col-16-16{ width: 100%; }       
 
 /* -- ========================================================= -- */ 
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
     /* -- some extra column content styling -- */
     [class*='col-16'] > p {
-     background-color: #2bf807; 
+     background-color: #2bf807;    
      padding: 0;
      margin: 0;
      text-align: center; 
@@ -352,49 +355,46 @@ author: Joseph McDonald - McDonald Media Production
     }
 	   
  .text16::before {
-    content: "Large Landscape Tablet and Desktop Layout 960 px";
+    content: "Large Landscape Tablet & Desktop Layout 960 - 1199 px";
 	display: inline;
 	}
+	   
+.text16 {	
+	max-width: 650px;
+	margin: auto;
+	}	   
  }
 
 /* -- ========================================================= -- */
-/* -- === Tablet landscape and desktop - 960 px  12 columns === -- */
+/* -- == Tablet landscape & desktop - 960 to 1199 px 12 columns -- */
 /* -- ========================================================= -- */
-/*      tablet landscape and desktop layout (960px to 1199px )     */    
- @media  only screen and (min-width:960px) and (max-width: 1199px)   
+@media only screen and (min-width:960px) and (max-width: 1199px)   
    { 
-     width: 0%; 
-/*	 min-width: 0;   
-     max-width: 0; */
-
 /*-- our cleafix hack -- */               
-  .row:before, 
+    .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
     }	     
 
-.grid-container-12{
-     width: 100%;
-    /*    min-width: 960px; 		*/  
+.trussGridContainer-12{
+        width: 95%;
+		margin: auto;
     }      
 
 /*-- setting border box on all elements inside the grid --*/    
-.grid-container-12 *{
+.trussGridContainer-12 *{
         box-sizing: border-box; 
-    }                                     
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */  
+    } 
+	   
+/* -- ========================================================= -- */ 
     [class*='col-12'] {
         float: left; 
         min-height: 1px; 
         width: 8.33333333333%; 
         /*-- gutter -- */              
         padding: 12px; 
- /*       background-color: #FFDCDC; */
-		background-color: #8cff78
     }
 
     .col-12-1{ width: 8.33333333333%; }
@@ -411,62 +411,56 @@ author: Joseph McDonald - McDonald Media Production
     .col-12-12{ width: 99.99999999996%; }
 
 /*  -- ========================================================= --  */    
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling -- */   
+    /* -- some extra column content styling -- */
     [class*='col-12'] > p {
-	 background-color: #2bf807;  
+     background-color: #2bf807;    
      padding: 0;
      margin: 0;
      text-align: center; 
      color: white; 
     }
-	   
+	  	   
 .text12::before {
-  content: "Large Landscape Tablet and Desktop Layout 960 px";
+  content: "Large Landscape Tablet & Desktop Layout 960 - 1199 px";
 	display: inline;
-	}	   
+	}
+	   
+.text12 {	
+	max-width: 650px;
+	margin: auto;
+	}	   	   
   }
 
 /* -- ========================================================= -- */
-/* -- === Tablet landscape and desktop - 960 px  6 columns  === -- */
-/* -- ========================================================= -- */
-/*      tablet landscape and desktop layout (960px to 1199px )     */    
- @media  only screen and (min-width:960px) and (max-width: 1199px)   
+/* -- == Tablet landscape & desktop - 960 to 1199 px 6 columns  -- */
+/* -- ========================================================= -- */  
+@media only screen and (min-width:960px) and (max-width: 1199px)   
    {
-.grid-container-6{
-      width: 100%; 
-     /*     min-width: 1200px;   */
-    /*	max-width:  px; */
-    }
-
-/*-- setting border box on all elements inside the grid --*/
-.grid-container-6 *{
-        box-sizing: border-box; 
-    }
-/*-- our cleafix hack -- */ 
+/* -- our cleafix hack -- */ 
     .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
-    }	
+    }   	   
+	   
+.trussGridContainer-6{
+        width: 95%;
+		margin: auto;
+    }
 
-/*-- ========================================================= --*/
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */
-/*  class group setting                                        */
+/* -- setting border box on all elements inside the grid -- */
+.trussGridContainer-6 *{
+        box-sizing: border-box; 
+    }
+	
+/* -- ========================================================= --*/
     [class*='col-6'] {
         float: left; 
         min-height: 1px; 
         width: 16.66%; 
         /*-- gutter -- */
         padding: 12px; 
- /*       background-color: #FFDCDC; */
-		background-color: #8cff78
     }
 
     .col-6-1{ width: 16.66%; }
@@ -476,63 +470,57 @@ author: Joseph McDonald - McDonald Media Production
     .col-6-5{ width: 83.33%; }
     .col-6-6{ width: 100%;   }
 
-/*-- ========================================================= --*/
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling --*/
+/* -- ========================================================= -- */
+    /* -- some extra column content styling -- */
     [class*='col-6'] > p {
-	 background-color: #2bf807; 
+     background-color: #2bf807;    
      padding: 0;
      margin: 0;
      text-align: center; 
      color: white; 
     }
-	   
+	  	   
 .text6::before {
-  content: "Large Landscape Tablet and Desktop Layout 960 px";
+  content: "Large Landscape Tablet & Desktop Layout 960 - 1199 px";
 	display: inline;
+	}  
+	   
+.text6 {	
+	max-width: 650px;
+	margin: auto;
 	}	   
  }
 
 /* -- =========================================================== -- */
-/* -- === Large Desktop Layout - 960 px  4 columns            === -- */
-/* -- =========================================================== -- */
-/*      tablet landscape and desktop layout (960px to 1199px )      */    
- @media  only screen and (min-width:960px) and (max-width: 1199px)   
+/* -- == Tablet landscape & desktop - 960 to 1199 px 4 columns  -- */
+/* -- =========================================================== -- */ 
+@media only screen and (min-width:960px) and (max-width: 1199px)   
    {
-.grid-container-4{
-      width: 100%; 
-     /*     min-width: 1200px;   */
-     /*	max-width:  px; */
-    }
-
-/*-- setting border box on all elements inside the grid --*/
-.grid-container-4 *{
-        box-sizing: border-box; 
-    }
 /*-- our cleafix hack -- */ 
     .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
-    }	
+    }	   
+	   
+.trussGridContainer-4{
+        width: 95%;
+		margin: auto;
+    }
 
-/*-- ========================================================= --*/
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */
-/*  class group setting                                        */
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-4 *{
+        box-sizing: border-box; 
+    }
+	
+/* -- ========================================================= -- */
     [class*='col-4'] {
         float: left; 
         min-height: 1px; 
         width: 25%; 
         /*-- gutter -- */
         padding: 12px; 
- /*       background-color: #FFDCDC; */
-		background-color: #8cff78
     }
 
     .col-4-1{ width: 25%; }
@@ -540,11 +528,7 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-3{ width: 75%;    }
     .col-4-4{ width: 100%; }
 
-/*-- ========================================================= --*/
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
+/* -- ========================================================= -- */
     /*-- some extra column content styling --*/
     [class*='col-4'] > p {
 	 background-color: #2bf807; 
@@ -555,50 +539,48 @@ author: Joseph McDonald - McDonald Media Production
     }
 	   
 .text4::before {
-   content: "Large Landscape Tablet and Desktop Layout 960 px";
+   content: "Large Landscape Tablet & Desktop Layout 960 - 1199 px";
 	display: inline;
-	}	      
+	}
+	   
+.text4 {	
+	max-width: 650px;
+	margin: auto;
+	}	   
  }
-
-/*  -- ======================================================== --  */
 /* -- ========================================================= -- */
-/* -- ===============  768 px  16 columns   =================== -- */
+/* -- ===      Tablet Portrait Layout 768 - 959 px         ==== -- */
 /* -- ========================================================= -- */
-/*     tablet portrait layout  (768px to 959px )                   */
- @media  only screen and (min-width: 768px) and (max-width:959px)
+/* -- ========================================================= -- */
+/* -- === Tablet Portrait Layout 768 - 959 px 16 columns   ==== -- */
+/* -- ========================================================= -- */
+@media only screen and (min-width: 768px) and (max-width:959px)
    {
-      width: 0%; 
-  min-width: 0;   
-   max-width: 0; /*	 */
-
 /*-- our cleafix hack -- */ 
-  .row:before, 
+    .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
     }	 
  
-.grid-container-16{
-        width: 100%; 
-	/*   min-width: 768px;   
-   max-width: 959px; 	 */ 
+.trussGridContainer-16{
+        width: 95%;
+		margin: auto;
     }
 
 /*-- setting border box on all elements inside the grid --*/     
-.grid-container-16 *{
+.trussGridContainer-16 *{
         box-sizing: border-box; 
     }
 
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */     
+/* -- ========================================================= -- */ 
     [class*='col-16'] {
         float: left; 
         min-height: 1px; 
         width: 6.25%; 
         /*-- gutter -- */  					 			
         padding: 12px;    								
-        background-color: #7acafa;
     }
 
     .col-16-1{ width: 6.25%; }
@@ -619,13 +601,9 @@ author: Joseph McDonald - McDonald Media Production
 	.col-16-16{ width: 100%; } 
 
 /* -- ========================================================= -- */ 
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
     /* -- some extra column content styling -- */
     [class*='col-16'] > p {
-     background-color: #009fff;
+     background-color: #007dc7;       
      padding: 0;
      margin: 0;
      text-align: center; 
@@ -633,49 +611,46 @@ author: Joseph McDonald - McDonald Media Production
     }
 	   
 .text16::before {
-  content: "Tablet Portrait Layout 768 px ";
+  content: "Tablet Portrait Layout 768 - 959 px ";
 	display: inline;
-	} 
+	}
+	   
+.text16 {	
+	max-width: 500px;
+	margin: auto;
+	}	   
  }
 
 /* -- ========================================================= -- */
-/* -- ===============  768 px  12 columns   =================== -- */
+/* -- === Tablet Portrait Layout 768 - 959 px 12 columns   ==== -- */
 /* -- ========================================================= -- */
-/*     tablet portrait layout  (768px to 959px )                   */
- @media  only screen and (min-width: 768px) and (max-width:959px)
+@media only screen and (min-width: 768px) and (max-width:959px)
    { 
-     width: 0%; 
-/*	  min-width: 0;   
-   max-width: 0; */
-
 /*-- our cleafix hack -- */               
-  .row:before, 
+    .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
     }	     
 
-.grid-container-12{
-     width: 100%;
-	/*   min-width: 768px;   
-   max-width: 959px; 	 */ 
+.trussGridContainer-12{
+        width: 95%; 
+		margin: auto;
     }      
 
 /*-- setting border box on all elements inside the grid --*/    
-.grid-container-12 *{
+.trussGridContainer-12 *{
         box-sizing: border-box; 
     }                                     
 
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */  
+/* -- ========================================================= -- */ 
     [class*='col-12'] {
         float: left; 
         min-height: 1px; 
         width: 8.33333333333%; 
         /*-- gutter -- */              
         padding: 12px; 
-        background-color: #7acafa;
     }
 
     .col-12-1{ width: 8.33333333333%; }
@@ -692,13 +667,9 @@ author: Joseph McDonald - McDonald Media Production
     .col-12-12{ width: 99.99999999996%; }
 
 /*  -- ========================================================= --  */    
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling -- */   
+    /* -- some extra column content styling -- */
     [class*='col-12'] > p {
-     background-color: #009fff;  
+     background-color: #007dc7;       
      padding: 0;
      margin: 0;
      text-align: center; 
@@ -706,47 +677,46 @@ author: Joseph McDonald - McDonald Media Production
     }
 	   
 .text12::before {
-  content: "Tablet Portrait Layout 768 px ";
+    content: "Tablet Portrait Layout 768 - 959 px ";
 	display: inline;
-	} 
+	}
+	   
+.text12 {	
+	max-width: 500px;
+	margin: auto;
+	}	   
   }
 
 /* -- ========================================================= -- */
-/* -- === Tablet Portrait Layout 768 px  6 columns   ========= -- */
+/* -- === Tablet Portrait Layout 768 - 959 px  6 columns   ==== -- */
 /* -- ========================================================= -- */
-/*     tablet portrait layout  (768px to 959px )                   */
- @media  only screen and (min-width: 768px) and (max-width:959px) 
+@media only screen and (min-width: 768px) and (max-width:959px) 
    {
-.grid-container-6{
-      width: 100%; 
-     /*     min-width: 1200px;   */
- /*	max-width:  px; */
-    }
-
-/*-- setting border box on all elements inside the grid --*/
-.grid-container-6 *{
-        box-sizing: border-box; 
-    }
 /*-- our cleafix hack -- */ 
     .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
+    }	   
+	   
+.trussGridContainer-6{
+        width: 95%;
+		margin: auto;
+    }
+
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-6 *{
+        box-sizing: border-box; 
     }	
 
-/*-- ========================================================= --*/
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */
-/*  class group setting                                        */
+/* -- ========================================================= -- */
     [class*='col-6'] {
         float: left; 
         min-height: 1px; 
         width: 16.66%; 
         /*-- gutter -- */
         padding: 12px; 
-        background-color: #7acafa;
     }
 
     .col-6-1{ width: 16.66%; }
@@ -756,62 +726,56 @@ author: Joseph McDonald - McDonald Media Production
     .col-6-5{ width: 83.33%; }
     .col-6-6{ width: 100%;   }
 
-/*-- ========================================================= --*/
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling --*/
+/* -- ========================================================= -- */
+    /* -- some extra column content styling -- */
     [class*='col-6'] > p {
-     background-color: #009fff;     
+     background-color: #007dc7;       
      padding: 0;
      margin: 0;
      text-align: center; 
      color: white; 
     }
-	   
 .text6::before {
-  content: "Tablet Portrait Layout 768 px ";
+    content: "Tablet Portrait Layout 768 - 959 px ";
 	display: inline;
 	}
+	   
+.text6 {	
+	max-width: 500px;
+	margin: auto;
+	}	   	   
 }
 
 /* -- ========================================================= -- */
-/* -- === Tablet Portrait Layout 768 px  4 columns   ========== -- */
+/* -- === Tablet Portrait Layout 768 - 959 px  4 columns   ==== -- */
 /* -- ========================================================= -- */
-/*     tablet portrait layout  (768px to 959px )                   */
- @media  only screen and (min-width: 768px) and (max-width:959px) 
+@media only screen and (min-width: 768px) and (max-width:959px) 
    {
-.grid-container-4{
-      width: 100%; 
-     /*     min-width: 1200px;   */
- /*	max-width:  px; */
-    }
-
-/*-- setting border box on all elements inside the grid --*/
-.grid-container-4 *{
-        box-sizing: border-box; 
-    }
 /*-- our cleafix hack -- */ 
     .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
-    }	
+    }	   
+	   
+.trussGridContainer-4{
+        width: 95%;
+		margin: auto;
+    }
 
-/*-- ========================================================= --*/
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */
-/*  class group setting                                        */
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-4 *{
+        box-sizing: border-box; 
+    }
+	
+/* -- ========================================================= -- */
     [class*='col-4'] {
         float: left; 
         min-height: 1px; 
         width: 25%; 
         /*-- gutter -- */
         padding: 12px; 
-        background-color: #7acafa;
     }
 
     .col-4-1{ width: 25%; }
@@ -819,14 +783,10 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-3{ width: 75%; }
     .col-4-4{ width: 100%; }
 
-/*-- ========================================================= --*/
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling --*/
+/* -- ========================================================= -- */
+    /* -- some extra column content styling -- */
     [class*='col-4'] > p {
-     background-color: #009fff; 
+     background-color: #007dc7;       
      padding: 0;
      margin: 0;
      text-align: center; 
@@ -834,49 +794,49 @@ author: Joseph McDonald - McDonald Media Production
     }
 	   
 .text4::before {
-  content: "Tablet Portrait Layout 768 px ";
+    content: "Tablet Portrait Layout 768 - 959 px ";
 	display: inline;
-	}	      
+	}
+	   
+.text4 {	
+	max-width: 500px;
+	margin: auto;
+	}	   
  }
 
 /* -- ========================================================= -- */
-/* -- ===============  480 px  16 columns   =================== -- */
+/* -- ==      Mobile Landscape Layout  480 - 767 px        ==== -- */
 /* -- ========================================================= -- */
-/*     mobile landscape layout  (480px to 767px )                  */
- @media  only screen and (min-width: 480px) and (max-width:767px)
+/* -- ========================================================= -- */
+/* -- == Mobile Landscape Layout  480 - 767 px 16 columns  ==== -- */
+/* -- ========================================================= -- */
+@media only screen and (min-width: 480px) and (max-width:767px)
    {
-      width: 0%; 
-  min-width: 0;   
-   max-width: 0; /*	 */
-
 /*-- our cleafix hack -- */ 
-  .row:before, 
+    .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
     }	 
  
-.grid-container-16{
-        width: 100%; 
-	 /*   min-width: 480px;   
-   max-width: 767px; 	 */ 
+.trussGridContainer-16{
+        width: 95%;
+		margin: auto;
     }
 
 /*-- setting border box on all elements inside the grid --*/     
-.grid-container-16 *{
+.trussGridContainer-16 *{
         box-sizing: border-box; 
     }
 
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */     
+/* -- ========================================================= -- */     
     [class*='col-16'] {
         float: left; 
         min-height: 1px; 
         width: 6.25%; 
         /*-- gutter -- */  					 			
         padding: 12px;    								
-        background-color: #e5ff78;
     }
 
     .col-16-1{ width: 6.25%; }
@@ -897,13 +857,9 @@ author: Joseph McDonald - McDonald Media Production
 	.col-16-16{ width: 100%; } 
 
 /* -- ========================================================= -- */ 
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /* -- some extra column content styling -- */
+    /*-- some extra column content styling -- */   
     [class*='col-16'] > p {
-     background-color: #ceff00;   
+     background-color: #f82845;   
      padding: 0;
      margin: 0;
      text-align: center; 
@@ -911,52 +867,46 @@ author: Joseph McDonald - McDonald Media Production
     }
 	   
 .text16::before {
-  content: "Mobile Landscape Layout 480 px";
+  content: "Mobile Landscape Layout 480 - 767 px";
 	display: inline;
+	}
+	   
+.text16 {	
+	max-width: 500px;
+	margin: auto;
 	}	   
  }
 
-/*  -- ========================================================= --  */
-
 /* -- ========================================================= -- */
-/* -- ===============  480 px  12 columns   =================== -- */
+/* -- == Mobile Landscape Layout  480 - 767 px 12 columns  ==== -- */
 /* -- ========================================================= -- */
-/*     mobile landscape layout  (480px to 767px )                  */
- @media  only screen and (min-width: 480px) and (max-width:767px)
+@media only screen and (min-width: 480px) and (max-width:767px)
    { 
-
-     width: 0%; 
-/*	  min-width: 0;   
-   max-width: 0; */
-
 /*-- our cleafix hack -- */               
-  .row:before, 
+    .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
     }	     
 
-.grid-container-12{
-     width: 100%;
-	 /*   min-width: 480px;   
-   max-width: 767px; 	 */ 
+.trussGridContainer-12{
+        width: 95%;
+		margin: auto;
     }      
 
-/*-- setting border box on all elements inside the grid --*/    
-.grid-container-12 *{
+/* -- setting border box on all elements inside the grid -- */    
+.trussGridContainer-12 *{
         box-sizing: border-box; 
-    }                                     
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */  
+    } 
+	   
+/* -- ========================================================= -- */ 
     [class*='col-12'] {
         float: left; 
         min-height: 1px; 
         width: 8.33333333333%; 
         /*-- gutter -- */              
         padding: 12px; 
-        background-color: #e5ff78;
     }
 
     .col-12-1{ width: 8.33333333333%; }
@@ -973,13 +923,9 @@ author: Joseph McDonald - McDonald Media Production
     .col-12-12{ width: 99.99999999996%; }
 
 /*  -- ========================================================= --  */    
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
     /*-- some extra column content styling -- */   
     [class*='col-12'] > p {
-     background-color: #ceff00;   
+     background-color: #f82845;   
      padding: 0;
      margin: 0;
      text-align: center; 
@@ -987,47 +933,46 @@ author: Joseph McDonald - McDonald Media Production
     }
 	   	   
 .text12::before {
-  content: "Mobile Landscape Layout 480 px";
+    content: "Mobile Landscape Layout 480 - 767 px";
 	display: inline;
-	}		   
+	}
+	   
+.text12 {	
+	max-width: 500px;
+	margin: auto;
+	}	   	   
   }
 
 /* -- ========================================================= -- */
-/* -- == Mobile Landscape Layout  480 px  6 columns  ========= -- */
+/* -- == Mobile Landscape Layout  480 - 767 px  6 columns  ==== -- */
 /* -- ========================================================= -- */
-/*     mobile landscape layout  (480px to 767px )                  */
- @media  only screen and (min-width: 480px) and (max-width:767px)
+@media only screen and (min-width: 480px) and (max-width:767px)
    {
-.grid-container-6{
-      width: 100%; 
-     /*     min-width: 1200px;   */
- /*	max-width:  px; */
-    }
-
-/*-- setting border box on all elements inside the grid --*/
-.grid-container-6 *{
-        box-sizing: border-box; 
-    }
 /*-- our cleafix hack -- */ 
     .row:before, 
     .row:after {
         content:"";
         display: table ;
         clear:both;
-    }	
+    }	   	   
+	   
+.trussGridContainer-6{
+        width: 95%;
+		margin: auto;
+    }
 
-/*-- ========================================================= --*/
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */
-/*  class group setting                                        */
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-6 *{
+        box-sizing: border-box; 
+    }
+	   
+/* -- ========================================================= -- */ 
     [class*='col-6'] {
         float: left; 
         min-height: 1px; 
         width: 16.66%; 
         /*-- gutter -- */
         padding: 12px; 
-        background-color: #e5ff78;
     }
 
     .col-6-1{ width: 16.66%; }
@@ -1038,41 +983,31 @@ author: Joseph McDonald - McDonald Media Production
     .col-6-6{ width: 100%;   }
 
 /*-- ========================================================= --*/
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling --*/
+    /*-- some extra column content styling -- */   
     [class*='col-6'] > p {
-     background-color: #ceff00; 
+     background-color: #f82845;   
      padding: 0;
      margin: 0;
      text-align: center; 
      color: white; 
     }
-	   	   
+	  	   
 .text6::before {
-  content: "Mobile Landscape Layout 480 px";
+  content: "Mobile Landscape Layout 480 - 767 px";
 	display: inline;
-	}		   
+	}
+	   
+.text6 {	
+	max-width: 500px;
+	margin: auto;
+	}	   	   
    }
 
 /* -- ========================================================= -- */
-/* -- == Mobile Landscape Layout  480 px  4 columns  ========= -- */
+/* -- == Mobile Landscape Layout  480 - 767 px  4 columns  ==== -- */
 /* -- ========================================================= -- */
-/*     mobile landscape layout  (480px to 767px )                  */
- @media  only screen and (min-width: 480px) and (max-width:767px)
-   {
-.grid-container-4{
-      width: 100%; 
-     /*     min-width: 1200px;   */
- /*	max-width:  px; */
-    }
-
-/*-- setting border box on all elements inside the grid --*/
-.grid-container-4 *{
-        box-sizing: border-box; 
-    }
+@media only screen and (min-width: 480px) and (max-width:767px)
+   {	   
 /*-- our cleafix hack -- */ 
     .row:before, 
     .row:after {
@@ -1080,19 +1015,224 @@ author: Joseph McDonald - McDonald Media Production
         display: table ;
         clear:both;
     }	
+   
+.trussGridContainer-4{
+        width: 95%; 
+		margin: auto;
+    }
 
-/*-- ========================================================= --*/
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-4 *{
+        box-sizing: border-box; 
+    }
 
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */
-/*  class group setting                                        */
+/*-- ========================================================= -- */
     [class*='col-4'] {
         float: left; 
         min-height: 1px; 
         width: 25%; 
         /*-- gutter -- */
         padding: 12px; 
-        background-color: #e5ff78;
+    }
+
+    .col-4-1{ width: 25%; }
+    .col-4-2{ width: 50%; }
+    .col-4-3{ width: 75%; }
+    .col-4-4{ width: 100%; }
+
+/*-- ========================================================= --*/	   
+    /*-- some extra column content styling -- */   
+    [class*='col-4'] > p {
+     background-color: #f82845;   
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
+			   
+.text4::before {
+      content: "Mobile Landscape Layout 480 - 767 px";
+	display: inline;
+	}
+	   
+.text4 {	
+	max-width: 500px;
+	margin: auto;
+	}	   
+ }
+
+/* -- ========================================================= -- */
+/* -- ===        Mobile Portrait Layout 422 to 479 px       === -- */
+/* -- ========================================================= -- */
+/* -- ========================================================= -- */
+/* -- = CLEAR Mobile Portrait Layout 422 to 479 px 16 columns== -- */
+/* -- ========================================================= -- */
+@media only screen and (min-width: 422px) and (max-width: 479px)
+   {
+ .trussGridContainer-16 ,  .text16 
+	   {
+    	display: none;
+		height: 0;
+  	 }   
+   }	
+/* -- ========================================================= -- */
+/* -- ===  Mobile Portrait Layout 422 to 479 px 12 columns  === -- */
+/* -- ========================================================= -- */
+ @media only screen and (min-width: 422px) and (max-width: 479px)
+   {
+/*	#tgc-12-row-1 { display: none;}	/*  HIDES ROW 1  */
+	   	      
+/*-- our cleafix hack -- */               
+    .row:before, 
+    .row:after {
+        content:"";
+        display: table ;
+        clear:both;
+    }	     
+
+.trussGridContainer-12{
+        width: 95%;
+		margin: auto;
+    }      
+
+/*-- setting border box on all elements inside the grid --*/    
+.trussGridContainer-12 *{
+        box-sizing: border-box; 
+    }                                     
+
+/* -- ========================================================= -- */ 
+    [class*='col-12'] {
+        float: left; 
+        min-height: 1px; 
+        width: 8.33333333333%; 
+        /*-- gutter -- */              
+        padding: 12px; 
+    }
+
+    .col-12-1{ width: 8.33333333333%; }
+    .col-12-2{ width: 16.66666666666%; }
+    .col-12-3{ width: 24.99999999999%; }
+    .col-12-4{ width: 33.33333333332%; }
+    .col-12-5{ width: 41.66666666665%; }
+	.col-12-6{ width: 49.99999999998%; }
+    .col-12-7{ width: 58.33333333331%; }
+    .col-12-8{ width: 66.66666666664%;  }
+    .col-12-9{ width: 74.99999999997%; }
+    .col-12-10{ width: 83.3333333333%; }	
+	.col-12-11{ width: 91.66666666663%; }
+    .col-12-12{ width: 99.99999999996%; }
+
+/*  -- ========================================================= --  */      
+    /* -- some extra column content styling -- */
+    [class*='col-12'] > p {		
+	 background-color: #cfc796; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
+	   
+.text12::before {
+    content: "Mobile Portrait Layout 422 to 479 px";
+	display: inline;
+	}
+	   
+.text12 {	
+	max-width: 500px;
+	margin: auto;
+	}	   
+  }
+
+/* -- ========================================================= -- */
+/* -- ===  Mobile Portrait Layout 422 to 479 px 6 columns   === -- */
+/* -- ========================================================= -- */
+@media only screen and (min-width: 422px) and (max-width: 479px)
+   {   
+/*-- our cleafix hack -- */ 
+    .row:before, 
+    .row:after {
+        content:"";
+        display: table ;
+        clear:both;
+    }
+	   
+.trussGridContainer-6{
+        width: 95%;
+		margin: auto;
+    }
+
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-6 *{
+        box-sizing: border-box; 
+    }
+	
+/*-- ========================================================= --*/
+    [class*='col-6'] {
+        float: left; 
+        min-height: 1px; 
+        width: 16.66%; 
+        /*-- gutter -- */
+        padding: 12px; 
+    }
+
+    .col-6-1{ width: 16.66%; }
+    .col-6-2{ width: 33.33%; }
+    .col-6-3{ width: 50%;    }
+    .col-6-4{ width: 66.66%; }
+    .col-6-5{ width: 83.33%; }
+    .col-6-6{ width: 100%;   }
+
+/*-- ========================================================= --*/
+    /* -- some extra column content styling -- */
+    [class*='col-6'] > p {		
+	 background-color: #cfc796; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    } 
+	   
+.text6::before {
+    content: "Mobile Portrait Layout 422 to 479 px";
+	display: inline;
+	}
+	   
+.text6 {	
+	max-width: 500px;
+	margin: auto;
+	}	   
+   }
+
+/* -- ========================================================= -- */
+/* -- ===  Mobile Portrait Layout 422 to 479 px 4 columns   === -- */
+/* -- ========================================================= -- */
+@media only screen and (min-width: 422px) and (max-width: 479px)
+   {
+/*-- our cleafix hack -- */ 
+    .row:before, 
+    .row:after {
+        content:"";
+        display: table ;
+        clear:both;
+    }	
+	   
+.trussGridContainer-4{
+        width: 95%; 
+		margin: auto; 
+    }
+
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-4 *{
+    box-sizing: border-box; 
+    }
+
+/* -- ========================================================= -- */ 
+    [class*='col-4'] {
+        float: left; 
+        min-height: 1px; 
+        width: 25%; 
+        /*-- gutter -- */
+        padding: 12px; 
     }
 
     .col-4-1{ width: 25%; }
@@ -1101,258 +1241,105 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-4{ width: 100%; }
 
 /*-- ========================================================= --*/
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling --*/
-    [class*='col-4'] > p {
-	 background-color: #ceff00; 
-     padding: 0;
-     margin: 0;
-     text-align: center; 
-     color: white; 
-    }
-	   
-.text4::before {
-  content: "Mobile Landscape Layout 480 px";
-	display: inline;
-	}	      
- }
-
-/* -- ========================================================= -- */
-/* -- =============== less than 480 px  16 columns   ========== -- */
-/* -- ========================================================= -- */
-/*     mobile portrait layout  ( to 479px )                        */
- @media  only screen and (max-width:479px)
-   {
-      width: 0%; 
-  min-width: 0;   
-   max-width: 0; /*	 */
-
-/*-- our cleafix hack -- */ 
-  .row:before, 
-    .row:after {
-        content:"";
-        display: table ;
-        clear:both;
-    }	 
-
-.grid-container-16{
-        width: 100%; 
-	 /*     
-   max-width: 479px; 	 */ 
-    }
-
-/*-- setting border box on all elements inside the grid --*/     
-.grid-container-16 *{
-        box-sizing: border-box; 
-    }
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */     
-    [class*='col-16'] {
-        float: left; 
-        min-height: 1px; 
-        width: 6.25%; 
-        /*-- gutter -- */  					 			
-        padding: 12px;    								
-        background-color:  #ffc678;
-    }
-
-    .col-16-1{ width: 6.25%; }
-    .col-16-2{ width: 12.5%; }
-    .col-16-3{ width: 18.75%; }
-    .col-16-4{ width: 25%; }
-    .col-16-5{ width: 31.25%; }
-	.col-16-6{ width: 37.5%; }
-    .col-16-7{ width: 43.75%; }
-    .col-16-8{ width: 50%;  }
-    .col-16-9{ width: 56.25%; }
-    .col-16-10{ width: 62.5%; }	
-	.col-16-11{ width: 68.75%; }
-    .col-16-12{ width: 75%; }  
-    .col-16-13{ width: 81.25%; }
-    .col-16-14{ width: 87.5%; }
-    .col-16-15{ width: 93.75%; }
-	.col-16-16{ width: 100%; } 
-
-/* -- ========================================================= -- */ 
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
     /* -- some extra column content styling -- */
-    [class*='col-16'] > p {		
-	 background-color: #e89d37; 
-     padding: 0;
-     margin: 0;
-     text-align: center; 
-     color: white; 
-    }
-	   
-.text16::before {
-  content: "Mobile Portrait Layout less than 479";
-	display: inline;
-	}	   
- }
-
-/* -- ========================================================= -- */
-/* -- =============== less than 480 px  12 columns   ========== -- */
-/* -- ========================================================= -- */
-/*     mobile portrait layout  ( to 479px )                        */
- @media  only screen and (max-width:479px)
-   {
-
-     width: 0%; 
-/*	  min-width: 0;   
-   max-width: 0; */
-
-/*-- our cleafix hack -- */               
-  .row:before, 
-    .row:after {
-        content:"";
-        display: table ;
-        clear:both;
-    }	     
-
-.grid-container-12{
-     width: 100%;
-	 /*   
-   max-width: 479px; 	 */ 
-    }      
-
-/*-- setting border box on all elements inside the grid --*/    
-.grid-container-12 *{
-        box-sizing: border-box; 
-    }                                     
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */  
-    [class*='col-12'] {
-        float: left; 
-        min-height: 1px; 
-        width: 8.33333333333%; 
-        /*-- gutter -- */              
-        padding: 12px; 
-        background-color:  #ffc678;
-    }
-
-    .col-12-1{ width: 8.33333333333%; }
-    .col-12-2{ width: 16.66666666666%; }
-    .col-12-3{ width: 24.99999999999%; }
-    .col-12-4{ width: 33.33333333332%; }
-    .col-12-5{ width: 41.66666666665%; }
-	.col-12-6{ width: 49.99999999998%; }
-    .col-12-7{ width: 58.33333333331%; }
-    .col-12-8{ width: 66.66666666664%;  }
-    .col-12-9{ width: 74.99999999997%; }
-    .col-12-10{ width: 83.3333333333%; }	
-	.col-12-11{ width: 91.66666666663%; }
-    .col-12-12{ width: 99.99999999996%; }
-
-/*  -- ========================================================= --  */    
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling -- */   
-    [class*='col-12'] > p {
-     background-color: #e89d37; 
-     padding: 0;
-     margin: 0;
-     text-align: center; 
-     color: white; 
-    }
-	   
-.text12::before {
-  content: "Mobile Portrait Layout less than 479";
-	display: inline;
-	}	   
-  }
-
-/* -- ========================================================= -- */
-/* -- =============== less than 480 px   6 columns   ========== -- */
-/* -- ========================================================= -- */
-/*     mobile portrait layout  ( to 479px )                        */
- @media  only screen and (max-width:479px)
-   {
-.grid-container-6{
-      width: 100%; 
-     /*     min-width: 1200px;   */
- /*	max-width:  px; */
-    }
-
-/*-- setting border box on all elements inside the grid --*/
-.grid-container-6 *{
-        box-sizing: border-box; 
-    }
-/*-- our cleafix hack -- */ 
-    .row:before, 
-    .row:after {
-        content:"";
-        display: table ;
-        clear:both;
-    }	
-
-/*-- ========================================================= --*/
-
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */
-/*  class group setting                                        */
-    [class*='col-6'] {
-        float: left; 
-        min-height: 1px; 
-        width: 16.66%; 
-        /*-- gutter -- */
-        padding: 12px; 
-        background-color:  #ffc678;
-    }
-
-    .col-6-1{ width: 16.66%; }
-    .col-6-2{ width: 33.33%; }
-    .col-6-3{ width: 50%;    }
-    .col-6-4{ width: 66.66%; }
-    .col-6-5{ width: 83.33%; }
-    .col-6-6{ width: 100%;   }
-
-/*-- ========================================================= --*/
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling --*/
-    [class*='col-6'] > p {
-     background-color: #e89d37; 
+    [class*='col-4'] > p {		
+	 background-color: #cfc796; 
      padding: 0;
      margin: 0;
      text-align: center; 
      color: white; 
     }  
 	   
+.text4::before {
+    content: "Mobile Portrait Layout 422 to 479 px";
+	display: inline;  		
+	}	
+	   
+.text4 {		
+	max-width: 500px;
+	margin: auto; 
+	}	   
+ }
+
+/* -- ========================================================= -- */
+/* --            Small Portrait Layout 250 to 421 px            -- */
+/* -- ========================================================= -- */
+/* -- ========================================================= -- */
+/* -- CLEAR Small Portrait Layout 250 to 421 px 12 & 16 columns -- */
+/* -- ========================================================= -- */
+@media only screen and (min-width: 250px) and (max-width: 421px)
+   {
+ .trussGridContainer-16 , .trussGridContainer-12 , .text16,  .text12
+	   {
+    	display: none;
+		height: 0;
+  	 }   
+   }
+/* -- ========================================================= -- */
+/* -- = Small Mobile Portrait Layout 250 to 421 px 6 columns  = -- */
+/* -- ========================================================= -- */
+@media only screen and (min-width: 250px) and (max-width: 421px)
+   {   
+/*-- our cleafix hack -- */ 
+    .row:before, 
+    .row:after {
+        content:"";
+        display: table ;
+        clear:both;
+    }
+	   
+.trussGridContainer-6{
+        width: 95%;
+		margin: auto;
+    }
+
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-6 *{
+        box-sizing: border-box; 
+    }
+	
+/* -- ========================================================= -- */ 
+    [class*='col-6'] {
+        float: left; 
+        min-height: 1px; 
+        width: 16.66%; 
+        /*-- gutter -- */
+        padding: 12px; 
+    }
+
+    .col-6-1{ width: 16.66%; }
+    .col-6-2{ width: 33.33%; }
+    .col-6-3{ width: 50%;    }
+    .col-6-4{ width: 66.66%; }
+    .col-6-5{ width: 83.33%; }
+    .col-6-6{ width: 100%;   }
+
+/*-- ========================================================= --*/	   
+    /* -- some extra column content styling -- */
+    [class*='col-6'] > p {		
+	 background-color: #7D5495; 
+     padding: 07D5495
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    } 
+	   
 .text6::before {
-  content: "Mobile Portrait Layout less than 479";
+    content: "Smal Mobile Portrait Layout 250 to 421 px";
 	display: inline;
+	}
+	   
+.text6 {	
+	max-width: 500px;
+	margin: auto;
 	}	   
    }
 
 /* -- ========================================================= -- */
-/* -- =============== less than 480 px  4 columns   ========== -- */
+/* -- ===  Mobile Portrait Layout 250 to 421px 4 columns    === -- */
 /* -- ========================================================= -- */
-/*     mobile portrait layout  ( to 479px )                        */
- @media  only screen and (max-width:479px)
+@media only screen and (min-width: 250px) and (max-width: 421px)
    {
-
-.grid-container-4{
-      width: 100%; 
-     /*     min-width: 1200px;   */
- /*	max-width:  px; */
-    }
-
-/*-- setting border box on all elements inside the grid --*/
-.grid-container-4 *{
-        box-sizing: border-box; 
-    }
 /*-- our cleafix hack -- */ 
     .row:before, 
     .row:after {
@@ -1360,19 +1347,24 @@ author: Joseph McDonald - McDonald Media Production
         display: table ;
         clear:both;
     }	
+	   
+.trussGridContainer-4{
+        width: 95%; 
+		margin: auto; 
+    }
 
-/*-- ========================================================= --*/
+/*-- setting border box on all elements inside the grid --*/
+.trussGridContainer-4 *{
+    box-sizing: border-box; 
+    }
 
-/* column width percent = divide 100 percent by num of columns */
-/*to prevent empty columns from stacking provide min-height 1px   */
-/*  class group setting                                        */
+/* -- ========================================================= -- */ 
     [class*='col-4'] {
         float: left; 
         min-height: 1px; 
         width: 25%; 
         /*-- gutter -- */
         padding: 12px; 
-        background-color:  #ffc678;
     }
 
     .col-4-1{ width: 25%; }
@@ -1381,23 +1373,22 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-4{ width: 100%; }
 
 /*-- ========================================================= --*/
-    .outline, .outline *{
-        outline: 1px solid #F6A1A1; 
-    }
-	
-    /*-- some extra column content styling --*/
-    [class*='col-4'] > p {
-     background-color: #e89d37; 
+    /* -- some extra column content styling -- */
+    [class*='col-4'] > p {		
+	 background-color: #7D5495; 
      padding: 0;
      margin: 0;
      text-align: center; 
      color: white; 
-    }
+    }  
 	   
 .text4::before {
-   content: "Mobile Portrait Layout less than 479";
-	display: inline;
-	}	      
+    content: "Small Mobile Portrait Layout 250 to 421 px";
+	display: inline;  		
+	}	
+	   
+.text4 {		
+	max-width: 500px;
+	margin: auto; 
+	}	   
  }
-
-/*  -- ========================================================= --  */
