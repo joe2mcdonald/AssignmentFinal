@@ -14,7 +14,8 @@ Change the anchor tag description for the item and include any necessary href li
 When adding list items to navbar, besure to include any required classes.
 Class: 'right', 'left', 'down' are for the direction of arrow image. 	
 Class 'last' is for the operation of left flyout.		
-Removing list items should not require any modification to the CSS. 
+The top level list items is fixed width. 
+If list items are added or removed the width will require changing in the CSS.
 
 <nav id="navBarId">
 	<ul>
