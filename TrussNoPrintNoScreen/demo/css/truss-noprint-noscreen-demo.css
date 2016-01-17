@@ -6,7 +6,15 @@ author: Joseph McDonald - McDonald Media Production
 /* -- ========================================================= -- */
 /* -- ===                  DEMO                             === -- */
 /* -- ========================================================= -- */
-
+/*   
+Truss No-Print No-Screen stylesheet, "truss-noprint-noscreen-demo.css", 
+has two classes. 
+No-Print class prevents the element that the class is attached to
+from being sent to the printer. 
+No-Screen class prevents the element that the class is attached to
+from being dispayed on the screen at the DOM load. 
+*/
+/* -- ========================================================= -- */
 @media print
 {
 	
@@ -30,7 +38,8 @@ main {clear:left;}
 }
 
 @media screen 
-{ .no-screen 
+{
+ .no-screen 
 	{ 
 	display: none;
 	 } 

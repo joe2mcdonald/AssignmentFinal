@@ -25,7 +25,9 @@ Include the HTML <div> tag for each 'message box' that you want to use in your s
 Modify the message for the box in the HTML <div> tag. 
 
 **3. CSS file
-The first two blocks of CSS code in the style sheet file and the block that matches the class in the HTML <div> tag are necessary.  
+It is not necessary for you to modify the CSS file. 
+But if you do or want to incorporate the CSS into your style sheet. 
+The first two blocks of CSS code in the truss-message-boxes-style.css CSS style sheet file and the block that matches the class in the HTML <div> tag are necessary.  
 If desired remove the 'message box' classes that are not used. 
 
 **4. You should not feel constrained by the way I have built the initial code. 

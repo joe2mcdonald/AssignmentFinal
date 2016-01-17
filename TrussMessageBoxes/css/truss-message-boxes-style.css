@@ -16,15 +16,14 @@ author: Joseph McDonald - McDonald Media Production
 }
 
 /*  HOVER OR FOCUS BY TAB INTO ITEM     */
-/*   BACKGROUND IMAGE GRADIENTS  */ 	
+/*   BACKGROUND IMAGE GRADIENTS         */ 	
 .msg-box:hover, .msg-box:focus
 {	
 	color: #000;  
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));   
-			/* Safari & Chrome */
-	background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); 											 /* firefox         */
-	background-image: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 25, 0));  						 					/* opera           */
-	background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 25, 0));                 				 			    /* internet explorer */	
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0))); /* Safari & Chrome */
+	background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)); 	/* firefox         */
+	background-image: -o-linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 25, 0));  	/* opera           */
+	background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 25, 0));        /* internet explorer */	
 /* TRANSITIONS GRADUALLY CHANGES THE PROPERTIES */ 
 	-moz-transition: 1.5s;       /* firefox         */
 	-o-transition: 1.5s;         /* opera           */

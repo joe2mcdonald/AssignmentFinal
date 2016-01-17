@@ -92,6 +92,14 @@ author: Joseph McDonald - McDonald Media Production
 	.col-16-16{ width: 100%; } 
 
 /* -- ========================================================= -- */ 
+    /* -- some extra column content styling -- */
+    [class*='col-16'] > p {
+	 background-color: #cfc796; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text16::before {
   content: "Large Desktop Layout 1200 - 1920 px";
@@ -144,6 +152,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-12-12{ width: 99.99999999996%; }
 
 /*  -- ========================================================= --  */    
+    /* -- some extra column content styling -- */
+    [class*='col-12'] > p {
+	 background-color: #cfc796; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 		   
 .text12::before {
     content: "Large Desktop Layout 1200 - 1920 px";
@@ -191,6 +207,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-6-6{ width: 100%;   }
 
 /*-- ========================================================= --*/
+    /* -- some extra column content styling -- */
+    [class*='col-6'] > p {
+	 background-color: #cfc796; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text6::before {
     content: "Large Desktop Layout 1200 - 1920 px";
@@ -236,6 +260,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-4{ width: 100%; }
 
 /*-- ========================================================= --*/
+    /* -- some extra column content styling -- */
+    [class*='col-4'] > p {
+	 background-color: #cfc796; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text4::before {
     content: "Large Desktop Layout 1200 - 1920 px";
@@ -296,6 +328,14 @@ author: Joseph McDonald - McDonald Media Production
 	.col-16-16{ width: 100%; }       
 
 /* -- ========================================================= -- */ 
+    /* -- some extra column content styling -- */
+    [class*='col-16'] > p {
+     background-color: #cfc796;   
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text16::before {
     content: "Large Landscape Tablet & Desktop Layout 960 - 1199 px";
@@ -349,6 +389,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-12-12{ width: 99.99999999996%; }
 
 /*  -- ========================================================= --  */    
+    /* -- some extra column content styling -- */
+    [class*='col-12'] > p {
+     background-color: #cfc796;   
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	  	   
 .text12::before {
     content: "Large Landscape Tablet & Desktop Layout 960 - 1199 px";
@@ -396,6 +444,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-6-6{ width: 100%;   }
 
 /* -- ========================================================= -- */
+    /* -- some extra column content styling -- */
+    [class*='col-6'] > p {
+     background-color: #cfc796;    
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	  	   
 .text6::before {
     content: "Large Landscape Tablet & Desktop Layout 960 - 1199 px";
@@ -441,6 +497,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-4{ width: 100%; }
 
 /* -- ========================================================= -- */
+    /*-- some extra column content styling --*/
+    [class*='col-4'] > p {
+	 background-color: #cfc796; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text4::before {
     content: "Large Landscape Tablet & Desktop Layout 960 - 1199 px";
@@ -500,6 +564,14 @@ author: Joseph McDonald - McDonald Media Production
 	.col-16-16{ width: 100%; } 
 
 /* -- ========================================================= -- */ 
+    /* -- some extra column content styling -- */
+    [class*='col-16'] > p {
+     background-color: #cfc796;       
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text16::before {
     content: "Tablet Portrait Layout 768 - 959 px ";
@@ -553,6 +625,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-12-12{ width: 99.99999999996%; }
 
 /*  -- ========================================================= --  */    
+    /* -- some extra column content styling -- */
+    [class*='col-12'] > p {
+     background-color: #cfc796;       
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text12::before {
     content: "Tablet Portrait Layout 768 - 959 px ";
@@ -600,7 +680,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-6-6{ width: 100%;   }
 
 /* -- ========================================================= -- */
-	
+    /* -- some extra column content styling -- */
+    [class*='col-6'] > p {
+     background-color: #cfc796;       
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 .text6::before {
     content: "Tablet Portrait Layout 768 - 959 px ";
 	display: inline;
@@ -645,6 +732,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-4{ width: 100%; }
 
 /* -- ========================================================= -- */
+    /* -- some extra column content styling -- */
+    [class*='col-4'] > p {
+     background-color: #cfc796;       
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text4::before {
     content: "Tablet Portrait Layout 768 - 959 px ";
@@ -705,7 +800,15 @@ author: Joseph McDonald - McDonald Media Production
 	.col-16-16{ width: 100%; } 
 
 /* -- ========================================================= -- */ 
- 	   
+    /*-- some extra column content styling -- */   
+    [class*='col-16'] > p {
+     background-color: #cfc796;   
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
+	   
 .text16::before {
     content: "Mobile Landscape Layout 480 - 767 px";
 	display: inline;
@@ -758,6 +861,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-12-12{ width: 99.99999999996%; }
 
 /*  -- ========================================================= --  */    
+    /*-- some extra column content styling -- */   
+    [class*='col-12'] > p {
+     background-color: #cfc796;;   
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   	   
 .text12::before {
     content: "Mobile Landscape Layout 480 - 767 px";
@@ -805,6 +916,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-6-6{ width: 100%;   }
 
 /*-- ========================================================= --*/
+    /*-- some extra column content styling -- */   
+    [class*='col-6'] > p {
+     background-color: #cfc796;   
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	  	   
 .text6::before {
     content: "Mobile Landscape Layout 480 - 767 px";
@@ -850,6 +969,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-4{ width: 100%; }
 
 /*-- ========================================================= --*/	   
+    /*-- some extra column content styling -- */   
+    [class*='col-4'] > p {
+     background-color: #cfc796;   
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 			   
 .text4::before {
     content: "Mobile Landscape Layout 480 - 767 px";
@@ -911,6 +1038,14 @@ author: Joseph McDonald - McDonald Media Production
 	.col-16-16{ width: 100%; } 
 
 /* -- ========================================================= -- */ 
+    /*-- some extra column content styling -- */   
+    [class*='col-16'] > p {
+     background-color: #cfc796;   
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text16::before {
     content: "Mobile Portrait Layout 422 to 479 px";
@@ -966,6 +1101,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-12-12{ width: 99.99999999996%; }
 
 /*  -- ========================================================= --  */      
+    /* -- some extra column content styling -- */
+    [class*='col-12'] > p {		
+	 background-color: #cfc796;
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text12::before {
     content: "Mobile Portrait Layout 422 to 479 px";
@@ -1013,6 +1156,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-6-6{ width: 100%;   }
 
 /*-- ========================================================= --*/
+    /* -- some extra column content styling -- */
+    [class*='col-6'] > p {		
+	 background-color: #cfc796; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    } 
 	   
 .text6::before {
     content: "Mobile Portrait Layout 422 to 479 px";
@@ -1058,7 +1209,15 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-4{ width: 100%; }
 
 /*-- ========================================================= --*/
-
+    /* -- some extra column content styling -- */
+    [class*='col-4'] > p {		
+	 background-color: #cfc796; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }  
+	   
 .text4::before {
     content: "Mobile Portrait Layout 422 to 479 px";
 	display: inline;  		
@@ -1119,6 +1278,14 @@ author: Joseph McDonald - McDonald Media Production
 	.col-16-16{ width: 100%; } 
 
 /* -- ========================================================= -- */ 
+    /*-- some extra column content styling -- */   
+    [class*='col-16'] > p {
+     background-color: #cfc796;   
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text16::before {
     content: "Small Mobile Portrait Layout 250 to 421 px";
@@ -1174,6 +1341,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-12-12{ width: 100%; }
 
 /*  -- ========================================================= --  */      
+    /* -- some extra column content styling -- */
+    [class*='col-12'] > p {		
+	 background-color: #cfc796;
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }
 	   
 .text12::before {
     content: "Small Mobile Portrait Layout 250 to 421 px";
@@ -1221,6 +1396,14 @@ author: Joseph McDonald - McDonald Media Production
     .col-6-6{ width: 100%;   }
 
 /*-- ========================================================= --*/	   
+    /* -- some extra column content styling -- */
+    [class*='col-6'] > p {		
+	 background-color: #cfc796;
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    } 
 	   
 .text6::before {
     content: "Small Mobile Portrait Layout 250 to 421 px";
@@ -1266,7 +1449,15 @@ author: Joseph McDonald - McDonald Media Production
     .col-4-4{ width: 100%; }
 
 /*-- ========================================================= --*/
- 	   
+    /* -- some extra column content styling -- */
+    [class*='col-4'] > p {		
+	 background-color: #cfc796; 
+     padding: 0;
+     margin: 0;
+     text-align: center; 
+     color: white; 
+    }  
+	   
 .text4::before {
     content: "Small Mobile Portrait Layout 250 to 421 px";
 	display: inline;  		

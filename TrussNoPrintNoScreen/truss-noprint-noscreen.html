@@ -10,12 +10,21 @@
 <!-- 	                             	                        -->	
 <!-- 	=====================================================	-->
 <!-- 
-Create A Stylesheet For Print, this will allow you to create custom CSS classes applied only at the time of print.
-Truss No-Print No-Screen prevents the element that the class is attached to from being sent to the printer. 
+Create A Stylesheet For No-Print & No-Screen classes.
+Truss No-Print No-Screen stylesheet, "truss-noprint-noscreen.css", 
+has two classes. 
+No-Print class prevents the element that the class is attached to
+from being sent to the printer. 
+No-Screen class prevents the element that the class is attached to
+from being dispayed on the screen at the DOM load. 
 
-In the HTML <head> 
-Put in the structure stylesheet file that controls the layout of the page and formatting of the content, with the media attribute set to "all".
-Put the link to the print style sheet, with the media attribute set to "print" & "screen" , at the end of the list of stylesheets. 
+In the HTML <head> (see "truss-noprint-noscreen.html" file)
+put the main structure stylesheet file that controls the layout 
+of the page and formatting of the content, with the media
+attribute set to "all".
+Put the link to the no-print no-screen style sheet,
+"truss-noprint-noscreen.css", with the media attribute set
+to "print" & "screen" , at the end of the list of stylesheets. 
 -->	 
 
 <!-- Main stylesheet on top of the list of stylesheets - media="all" -->   
@@ -24,7 +33,7 @@ Put the link to the print style sheet, with the media attribute set to "print" &
 --> 
 
 <!-- Print only stylesheet, on bottom of the list of style sheets --> 
-<link href="demo/css/truss-noprint-noscreen.css"  rel="stylesheet" type="text/css" media="screen, print">
+<link href="css/truss-noprint-noscreen.css"  rel="stylesheet" type="text/css" media="screen, print">
 
 </head>
     

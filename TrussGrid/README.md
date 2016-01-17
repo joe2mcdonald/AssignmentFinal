@@ -14,9 +14,11 @@ And 6 different major breakpoints for each:
 
 ### Operation:
 ------
-**1. Use the Truss-Grid.html as a starting point. 
-The Truss-Grid.css contains the grid dimentions as percentages.  
-Besure the CSS files (normalize.css and Truss-Grid.css) are in the html. 
+**1. Run the Truss-Grid-DEMO.html demonstration file to see the different variations of columns and the breakpoints when the browser is resized. 
+Select which columns and rows that you will be using. 
+It uses a demonstration CSS file with syles to show the Truss Grid Template.
+**2. The Truss-Grid.css contains the grid dimentions as percentages.  
+Besure the CSS files (normalize.css and Truss-Grid.css) are in the html file that you are creating. 
 To use these files, simply include the css files in the `<head>` of the HTML page.
 ```html
 <head>
@@ -24,14 +26,13 @@ To use these files, simply include the css files in the `<head>` of the HTML pag
 	<link href="css/Truss-Grid.css" rel="stylesheet" type="text/css" media="all">
 </head>
 ````html
-**2. Run the Truss-Grid.html file inorder to view the different variations of columns and the breakpoints when the browser is resized.  
-Modify the HTML file and choose the matching <div> 'trussGridContainer' classes that you need. 
-Remove the remaining html <div> 'trussGridContainer' classes that you don't need. 
+**3. Use the Truss-Grid.html (not the demo) as a starting point to make your modifications to the HTML. To create your grid, modify the Truss-Grid.html file and choose the matching <div> 'trussGridContainer' classes for the columns that you need. 
+Remove the remaining html <div> 'trussGridContainer' classes for the columns that you don't need. 
 Remove the html <div> 'row' classes that you don't need. 
-**3. It is not necessary to modify the CSS file. 
-However you may, if desired remove any layouts that don't pertain to your site. 
+**4. It is not necessary to modify the CSS file. 
+However you may, if desired remove any layouts in the CSS file that don't pertain to your site. 
 By removing the layout code according to the breakpoints & columns blocks of code, that you don't need.
-**4. These styles do not automatically make up a finished site design. 
+**5. These styles do not automatically make up a finished site design. 
 They are simply a starting point, ideally for rapid prototyping or as a basis for creating your own designs. 
 You should not feel constrained by the way I have built the initial code. 
 If you disagree with how something has been done, feel free to revise it for the needs of your particular site.
